@@ -1,4 +1,4 @@
-# AI SOC Analyst — Automated Threat Detection
+# AI-Powered SOC Analyst Automation System
 
 An automated Security Operations Center (SOC) triage tool that detects network threats in real time, uses Google Gemini AI to analyze and classify them using a professional SOC playbook, auto-blocks attackers via iptables, and sends instant Discord alerts.
 
