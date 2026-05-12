@@ -1,0 +1,9 @@
+# Never push these to GitHub
+soc_analyst.py
+gemini_response.json
+alert.json
+traffic.pcap
+traffic.csv
+soc_log.txt
+__pycache__/
+*.pyc
