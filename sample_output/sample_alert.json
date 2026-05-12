@@ -1,0 +1,15 @@
+{
+    "alert_id": "SOC-F8F7A231",
+    "alert_type": "Suspicious Network Volume",
+    "indicator_type": "ip",
+    "indicator_value": "192.168.1.100",
+    "source_host": "attacker-host",
+    "destination_host": "kali-target",
+    "destination_ip": "10.0.2.2",
+    "protocol": "ICMP",
+    "evidence": {
+        "packet_count": 29744,
+        "time_window_seconds": 20,
+        "data_source": "/tmp/traffic.pcap"
+    }
+}                
