@@ -1,0 +1,21 @@
+{
+    "alert_id": "SOC-F8F7A231",
+    "threat_classification": "Suspicious Network Volume",
+    "risk_score": 75,
+    "risk_level": "High",
+    "confidence_level": "High",
+    "mitre_mapping": {
+        "tactic": "Impact",
+        "technique_id": "T1498",
+        "technique_name": "Network Denial of Service"
+    },
+    "analysis_reasoning": "The alert indicates an extremely high volume of ICMP packets (29744) directed at the 'kali-target' host within a very short 20-second time window from 'attacker-host'. This sustained, high-rate ICMP activity is characteristic of an ICMP flood, a form of Network Denial of Service (DoS) attack. The significant packet count and compressed time window contribute to a high risk score, indicating a potential disruption to service availability.",
+    "recommended_actions": [
+        "Enrich with threat intelligence for indicator_value (192.168.1.100) and source_host (attacker-host).",
+        "Block indicator_value (192.168.1.100) at the network perimeter (firewall/IDS/IPS).",
+        "Escalate to Tier 2 for immediate investigation, impact assessment on 'kali-target', and coordinated response.",
+        "Monitor destination_host (kali-target) for continued or related anomalous activity."
+    ],
+    "escalation_required": true,
+    "executive_summary": "A high volume of suspicious network traffic, characteristic of a denial-of-service attempt, was detected targeting an internal system. This activity poses a high risk to service availability and requires immediate attention to prevent operational impact. Security teams are initiating mitigation actions and escalating for further investigation."
+}                    
